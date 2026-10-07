@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlogSpace | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html">Blog<span>Space</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="login.html" id="navLogin">Login</a>
+    <a class="nav-btn" href="create-blog.html">Write a Blog</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <p class="eyebrow">WRITE • SHARE • DISCOVER</p>
+      <h1>Ideas worth<br><span>reading.</span></h1>
+      <p class="hero-text">A clean and responsive blog application powered by a Node.js and Express.js backend.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="create-blog.html">Start Writing</a>
+        <a class="btn secondary" href="#blogs">Explore Blogs</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="mini-card">
+        <span>FEATURED</span>
+        <h3>The future of digital creativity</h3>
+        <p>Technology is changing the way we learn, build and express ideas.</p>
+        <small>6 min read • Today</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="blogs" class="section">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">LATEST POSTS</p>
+        <h2>Fresh from the community</h2>
+      </div>
+      <a href="dashboard.html" class="text-link">View dashboard →</a>
+    </div>
+    <div id="blogGrid" class="blog-grid"></div>
+  </section>
+</main>
+
+<footer>© 2026 BlogSpace. Built for learning and creativity.</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

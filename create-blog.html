@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlogSpace | Create Blog</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html">Blog<span>Space</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html">Dashboard</a>
+  </nav>
+</header>
+
+<main class="container editor-page">
+  <div class="editor-head">
+    <div>
+      <p class="eyebrow">CREATE</p>
+      <h1>Publish a new blog</h1>
+    </div>
+    <a class="text-link" href="dashboard.html">Cancel</a>
+  </div>
+
+  <form id="blogForm" class="editor-card">
+    <div class="two-col">
+      <label>Blog title
+        <input type="text" id="blogTitle" maxlength="100" required placeholder="Give your post a clear title">
+      </label>
+
+      <label>Category
+        <select id="blogCategory">
+          <option>Technology</option>
+          <option>Education</option>
+          <option>Career</option>
+          <option>Design</option>
+          <option>Lifestyle</option>
+          <option>Other</option>
+        </select>
+      </label>
+    </div>
+
+    <label>Featured image URL
+      <input type="url" id="blogImage" placeholder="https://images.example.com/photo.jpg">
+    </label>
+
+    <label>Content
+      <textarea id="blogContent" rows="13" required placeholder="Start writing your story..."></textarea>
+    </label>
+
+    <div class="editor-actions">
+      <span class="muted">Your post will be sent to the Express backend.</span>
+      <button class="btn primary" type="submit">Publish Blog</button>
+    </div>
+  </form>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>

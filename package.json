@@ -1,0 +1,16 @@
+{
+  "name": "blog-space-codomax-task-2",
+  "version": "1.0.0",
+  "description": "BlogSpace Task 2 - Node.js and Express.js REST API backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "keywords": ["nodejs", "express", "rest-api", "blog"],
+  "author": "Rakesh Tangeti",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

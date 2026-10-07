@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlogSpace | Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="brand" href="index.html">Blog<span>Space</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="create-blog.html">Create Blog</a>
+    <button id="logoutBtn" class="link-button">Logout</button>
+  </nav>
+</header>
+
+<main class="container dashboard">
+  <section class="dashboard-top">
+    <div>
+      <p class="eyebrow">YOUR SPACE</p>
+      <h1 id="welcomeUser">My Dashboard</h1>
+      <p class="muted">Manage your posts and publish something new.</p>
+    </div>
+    <a href="create-blog.html" class="btn primary">+ Create Blog</a>
+  </section>
+
+  <section>
+    <div class="stats">
+      <div class="stat"><strong id="postCount">0</strong><span>Posts</span></div>
+      <div class="stat"><strong id="wordCount">0</strong><span>Words written</span></div>
+      <div class="stat"><strong>100%</strong><span>Responsive</span></div>
+    </div>
+
+    <div class="section-heading compact"><h2>Your posts</h2></div>
+    <div id="dashboardGrid" class="blog-grid"></div>
+    <div id="emptyState" class="empty-state">No posts yet. Create your first blog!</div>
+  </section>
+</main>
+
+<script src="js/script.js"></script>
+</body>
+</html>
